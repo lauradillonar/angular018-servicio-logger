@@ -10,6 +10,9 @@ import { SelectComidaComponent } from './select-comida/select-comida.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    SelectComidaComponent
   ]
 })
 export class ComidaModule { }

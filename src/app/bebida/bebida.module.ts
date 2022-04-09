@@ -10,6 +10,9 @@ import { SelectBebidaComponent } from './select-bebida/select-bebida.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    SelectBebidaComponent
   ]
 })
 export class BebidaModule { }
