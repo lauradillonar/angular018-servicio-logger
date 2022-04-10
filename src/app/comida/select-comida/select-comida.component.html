@@ -4,6 +4,7 @@
     type="radio"
     name="comida"
     [(ngModel)]="comida"
+    (change)="printLog('Pizza', 'lightblue')"
     value="Pizza"
   />Pizza</label
 ><br />
@@ -12,6 +13,7 @@
     type="radio"
     name="comida"
     [(ngModel)]="comida"
+    (change)="printLog('Pasta', 'lightblue')"
     value="Pasta"
   />Pasta</label
 ><br />
@@ -20,8 +22,8 @@
     type="radio"
     name="comida"
     [(ngModel)]="comida"
+    (change)="printLog('Lazaña', 'lightblue')"
     value="Lasaña"
   />Lasaña</label
 ><br />
-
 <p *ngIf="comida.length > 0">Marchando... una de {{ comida }}</p>

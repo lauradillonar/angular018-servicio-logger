@@ -13,4 +13,8 @@ export class SelectBebidaComponent{
 
   constructor(private loggerService: LoggerService) { }
 
+  printLog(msg:string, color:string):void{
+    this.loggerService.printLog(msg,color);
+  }
+
 }
