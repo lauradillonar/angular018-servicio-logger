@@ -1,1 +1,26 @@
-<p>select-bebida works!</p>
+<p>¿Qué quieres beber?</p>
+<label
+  ><input
+    type="radio"
+    name="bebida"
+    [(ngModel)]="bebida"
+    value="CocaCola"
+  />CocaCola</label
+><br />
+<label
+  ><input
+    type="radio"
+    name="bebida"
+    [(ngModel)]="bebida"
+    value="Fanta"
+  />Fanta</label
+><br />
+<label
+  ><input
+    type="radio"
+    name="bebida"
+    [(ngModel)]="bebida"
+    value="Acuarius"
+  />Acuarius</label
+><br />
+<p *ngIf="bebida.length > 0">Marchando... una de {{ bebida }}</p>

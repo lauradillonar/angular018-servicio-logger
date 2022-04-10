@@ -1,15 +1,16 @@
+import { LoggerService } from './../../services/logger.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-select-bebida',
   templateUrl: './select-bebida.component.html',
-  styleUrls: ['./select-bebida.component.css']
+  styleUrls: ['./select-bebida.component.css'],
+  providers: [LoggerService]
 })
-export class SelectBebidaComponent implements OnInit {
+export class SelectBebidaComponent{
 
-  constructor() { }
+  bebida = '';
 
-  ngOnInit(): void {
-  }
+  constructor(private loggerService: LoggerService) { }
 
 }
