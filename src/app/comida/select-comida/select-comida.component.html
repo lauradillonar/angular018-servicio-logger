@@ -1,1 +1,27 @@
-<p>select-comida works!</p>
+<p>¿Qué quieres comer?</p>
+<label
+  ><input
+    type="radio"
+    name="comida"
+    [(ngModel)]="comida"
+    value="Pizza"
+  />Pizza</label
+><br />
+<label
+  ><input
+    type="radio"
+    name="comida"
+    [(ngModel)]="comida"
+    value="Pasta"
+  />Pasta</label
+><br />
+<label
+  ><input
+    type="radio"
+    name="comida"
+    [(ngModel)]="comida"
+    value="Lasaña"
+  />Lasaña</label
+><br />
+
+<p *ngIf="comida.length > 0">Marchando... una de {{ comida }}</p>
